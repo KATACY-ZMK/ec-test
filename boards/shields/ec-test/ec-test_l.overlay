@@ -7,10 +7,10 @@
         ;
 };
 
-&left1_encoder1 {
+&left1_encoder {
    status = "disabled";
 };
 
-&left2_encoder2 {
+&left2_encoder {
    status = "okay";
 };
