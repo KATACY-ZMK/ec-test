@@ -1,0 +1,5 @@
+config SHIELD_SPLIT75_R
+    def_bool $(shields_list_contains,split75-test_r)
+
+config SHIELD_SPLIT75_L
+    def_bool $(shields_list_contains,split75-test_l)
