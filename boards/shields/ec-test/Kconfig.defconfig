@@ -1,7 +1,7 @@
-if SHIELD_TWEAKBIT_R
+if SHIELD_EC-TEST_R
 
 config ZMK_KEYBOARD_NAME
-    default "tweakbit"
+    default "ec-test"
 
 config ZMK_BLE
     default y
@@ -11,7 +11,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_TWEAKBIT_R || SHIELD_TWEAKBIT_L
+if SHIELD_EC-TEST_R || SHIELD_EC-TEST_L
 
 config NFCT_PINS_AS_GPIOS
     default y
