@@ -1,9 +1,20 @@
 #include "ec-test.dtsi"
 
-&sensors {
-   sensors = <&encoder_right>; // このビルドでは右エンコーダーを使う
+&default_transform {
+    col-offset = <2>;
 };
 
-&encoder_right {
-    status = "okay"; // 右エンコーダーを有効化
+&kscan0 {
+    col-gpios
+        = <&xiao_d 0 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 1 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+&right1_encoder {
+   status = "okay";
+};
+
+&right2_encoder {
+   status = "okay";
 };

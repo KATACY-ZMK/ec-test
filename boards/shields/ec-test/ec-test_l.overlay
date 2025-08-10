@@ -1,9 +1,16 @@
 #include "ec-test.dtsi"
 
-&sensors {
-    sensors = <&encoder_left>; // このビルドでは左エンコーダーを使う
+&kscan0 {
+    col-gpios
+        = <&xiao_d 0 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 1 GPIO_ACTIVE_HIGH>
+        ;
 };
 
-&encoder_left {
-    status = "okay"; // 左エンコーダーを有効化
+&left1_encoder1 {
+   status = "disabled";
+};
+
+&left2_encoder2 {
+   status = "okay";
 };
