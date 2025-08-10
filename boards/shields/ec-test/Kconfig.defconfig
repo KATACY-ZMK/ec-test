@@ -1,14 +1,14 @@
 if SHIELD_EC-TEST_R
 
 config ZMK_KEYBOARD_NAME
-    default "Futaba Keyboard"
+    default "ec-test Keyboard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_FUTABA_LEFT || SHIELD_FUTABA_RIGHT
+if SHIELD_EC-TEST_LEFT || SHIELD_EC-TEST_RIGHT
 
 config ZMK_SPLIT
     default y
