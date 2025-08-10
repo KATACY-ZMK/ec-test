@@ -1,43 +1,16 @@
 if SHIELD_EC-TEST_R
 
 config ZMK_KEYBOARD_NAME
-    default "ec-test"
-
-config ZMK_BLE
-    default y
+    default "Futaba Keyboard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_EC-TEST_R || SHIELD_EC-TEST_L
-
-config NFCT_PINS_AS_GPIOS
-    default y
+if SHIELD_FUTABA_LEFT || SHIELD_FUTABA_RIGHT
 
 config ZMK_SPLIT
     default y
-
-config INPUT
-    default y
-
-config ZMK_POINTING
-    default y
-
-config SPI
-    default y
-
-config PMW3610
-    default y
-
-config PMW3610_SWAP_XY
-    default y
-
-config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
-    default 30
-
-config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
-    default 10
 
 endif
