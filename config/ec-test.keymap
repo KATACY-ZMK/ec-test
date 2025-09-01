@@ -38,7 +38,6 @@
                 &inc_dec_kp UP_ARROW   DOWN_ARROW
             >;
         };
-<<<<<<< HEAD
 
         bt_layer {
             bindings = <
@@ -53,7 +52,5 @@
                 &inc_dec_kp UP_ARROW   DOWN_ARROW
             >;
         };
-=======
->>>>>>> df62b4c0c91ab01ae56c794f69352e143ec5a884
     };
 };
