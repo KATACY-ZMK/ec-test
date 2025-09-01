@@ -10,13 +10,25 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
+    // =================================================
+    // ▼▼▼ ここに「00」マクロを追加しました ▼▼▼
+    // =================================================
+    behaviors {
+        double_zero: double_zero {
+            compatible = "zmk,behavior-string";
+            #binding-cells = <0>;
+            string = "00";
+        };
+    };
+    // =================================================
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp A &kp B &kp BACKSPACE &kp ENTER
-                &kp C &kp D &kp SPACE     &mo 1
+                &kp A &kp B &kp BACKSPACE    &kp ENTER
+                &kp C &double_zero &kp SPACE &mo 1       // ← Dの位置を「00」マクロに置き換えました
             >;
 
             sensor-bindings = <
@@ -30,7 +42,7 @@
         bt_layer {
             bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &bt BT_CLR_ALL
-                &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT  &kp N0 
+                &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT  &kp N0
             >;
 
             sensor-bindings = <
