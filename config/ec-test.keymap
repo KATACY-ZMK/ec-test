@@ -11,7 +11,7 @@
 
 / {
     // =================================================
-    // ▼▼▼ ここに「00」マクロを追加しました ▼▼▼
+    // 「00」を高速出力するためのマクロ定義
     // =================================================
     behaviors {
         double_zero: double_zero {
@@ -31,10 +31,11 @@
                 &kp C &double_zero &kp SPACE &mo 1
             >;
 
+            // ↓↓↓ 私が間違えて追加したカンマを削除しました
             sensor-bindings = <
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW,
-                &inc_dec_kp UP_ARROW   DOWN_ARROW,
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW,
+                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
+                &inc_dec_kp UP_ARROW   DOWN_ARROW
+                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
                 &inc_dec_kp UP_ARROW   DOWN_ARROW
             >;
         };
@@ -44,11 +45,12 @@
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &bt BT_CLR_ALL
                 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT  &kp N0
             >;
-
+            
+            // ↓↓↓ こちらも同様に、間違っていたカンマを削除しました
             sensor-bindings = <
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW,
-                &inc_dec_kp UP_ARROW   DOWN_ARROW,
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW,
+                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
+                &inc_dec_kp UP_ARROW   DOWN_ARROW
+                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
                 &inc_dec_kp UP_ARROW   DOWN_ARROW
             >;
         };
