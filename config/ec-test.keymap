@@ -28,13 +28,13 @@
         default_layer {
             bindings = <
                 &kp A &kp B &kp BACKSPACE    &kp ENTER
-                &kp C &double_zero &kp SPACE &mo 1       // ← Dの位置を「00」マクロに置き換えました
+                &kp C &double_zero &kp SPACE &mo 1
             >;
 
             sensor-bindings = <
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
-                &inc_dec_kp UP_ARROW   DOWN_ARROW
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
+                &inc_dec_kp LEFT_ARROW RIGHT_ARROW,
+                &inc_dec_kp UP_ARROW   DOWN_ARROW,
+                &inc_dec_kp LEFT_ARROW RIGHT_ARROW,
                 &inc_dec_kp UP_ARROW   DOWN_ARROW
             >;
         };
@@ -46,9 +46,9 @@
             >;
 
             sensor-bindings = <
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
-                &inc_dec_kp UP_ARROW   DOWN_ARROW
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
+                &inc_dec_kp LEFT_ARROW RIGHT_ARROW,
+                &inc_dec_kp UP_ARROW   DOWN_ARROW,
+                &inc_dec_kp LEFT_ARROW RIGHT_ARROW,
                 &inc_dec_kp UP_ARROW   DOWN_ARROW
             >;
         };
