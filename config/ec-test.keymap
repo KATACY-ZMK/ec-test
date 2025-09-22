@@ -13,9 +13,8 @@
 
         default_layer {
             bindings = <
-&kp A  &kp B         &kp BACKSPACE  &kp ENTER
-&kp C  &double_zero  &kp SPACE      &mo 1
-            >;
+&kp A  &kp B    &kp A  &kp B
+&kp A  &kp B    &kp A  &kp B
 
             sensor-bindings =
                 <&inc_dec_kp A B>,
@@ -26,8 +25,8 @@
 
         bt_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &bt BT_CLR_ALL
-&bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT  &kp N0
+&kp A  &kp B    &kp A  &kp B
+&kp A  &kp B    &kp A  &kp B
             >;
 
             sensor-bindings = <
