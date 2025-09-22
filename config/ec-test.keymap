@@ -12,29 +12,33 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <
-&kp A  &kp B    &kp A  &kp B
-&kp A  &kp B    &kp A  &kp B
+    bindings = <
+        &kp A  &kp B    &kp A  &kp B
+        &kp A  &kp B    &kp A  &kp B
+    >;
 
-            sensor-bindings =
-                <&inc_dec_kp A B>,
-                <&inc_dec_kp C D>,
-                <&inc_dec_kp E F>,
-                <&inc_dec_kp G H>;
-        };
+    sensor-bindings = <
+        &inc_dec_kp A B
+        &inc_dec_kp C D
+        &inc_dec_kp E F
+        &inc_dec_kp G H
+    >;
+};
+
 
         bt_layer {
-            bindings = <
-&kp A  &kp B    &kp A  &kp B
-&kp A  &kp B    &kp A  &kp B
-            >;
+    bindings = <
+        &kp A  &kp B    &kp A  &kp B
+        &kp A  &kp B    &kp A  &kp B
+    >;
 
-            sensor-bindings = <
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
-                &inc_dec_kp UP_ARROW   DOWN_ARROW
-                &inc_dec_kp LEFT_ARROW RIGHT_ARROW
-                &inc_dec_kp UP_ARROW   DOWN_ARROW
-            >;
-        };
+    sensor-bindings = <
+        &inc_dec_kp LEFT_ARROW RIGHT_ARROW
+        &inc_dec_kp UP_ARROW   DOWN_ARROW
+        &inc_dec_kp LEFT_ARROW RIGHT_ARROW
+        &inc_dec_kp UP_ARROW   DOWN_ARROW
+    >;
+};
+
     };
 };
