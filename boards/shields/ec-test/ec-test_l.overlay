@@ -8,7 +8,7 @@
 };
 
 &left1_encoder {
-   status = "disabled";
+   status = "okay";
 };
 
 &left2_encoder {
