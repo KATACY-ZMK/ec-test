@@ -4,7 +4,6 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -12,33 +11,31 @@
         compatible = "zmk,keymap";
 
         default_layer {
-    bindings = <
-        &kp A  &kp B    &kp A  &kp B
-        &kp A  &kp B    &kp A  &kp B
-    >;
+            bindings = <
+&kp B  &kp B  &kp A  &kp B
+&kp A  &kp B  &kp A  &kp B
+            >;
 
-    sensor-bindings = <
+            sensor-bindings = <
         &inc_dec_kp A B
         &inc_dec_kp C D
         &inc_dec_kp E F
         &inc_dec_kp G H
-    >;
-};
-
+            >;
+        };
 
         bt_layer {
-    bindings = <
-        &kp A  &kp B    &kp A  &kp B
-        &kp A  &kp B    &kp A  &kp B
-    >;
+            bindings = <
+&kp A  &kp B  &kp A  &kp B
+&kp A  &kp B  &kp A  &kp B
+            >;
 
-    sensor-bindings = <
+            sensor-bindings = <
         &inc_dec_kp LEFT_ARROW RIGHT_ARROW
         &inc_dec_kp UP_ARROW   DOWN_ARROW
         &inc_dec_kp LEFT_ARROW RIGHT_ARROW
         &inc_dec_kp UP_ARROW   DOWN_ARROW
-    >;
-};
-
+            >;
+        };
     };
 };
